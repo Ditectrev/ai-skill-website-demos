@@ -1,0 +1,18 @@
+{
+  "name": "ai-skill-website-demos",
+  "private": true,
+  "scripts": {
+    "skills": "skills experimental_sync -a cursor -y"
+  },
+  "skills": [
+    {
+      "source": "addyosmani/web-quality-skills",
+      "skills": ["core-web-vitals", "accessibility", "seo"]
+    },
+    "vercel-labs/agent-skills@web-design-guidelines",
+    "anthropics/skills@frontend-design"
+  ],
+  "devDependencies": {
+    "skills": "latest"
+  }
+}
