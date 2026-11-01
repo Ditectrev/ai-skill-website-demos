@@ -11,7 +11,7 @@ This repo is the install list for quick website demos. It does not build the sit
 | `accessibility` | After the build. Checks keyboard use, contrast, labels, and focus. |
 | `seo` | After the build. Checks titles, descriptions, canonicals, and indexing. |
 | `web-design-guidelines` | After the build. Checks Vercel’s interface rules for forms, focus, and interaction. |
-| `vercel-site-poc` | While building. Next.js demo: brand, languages, search, themes, preview banner, share cards, redirects, contact links, legal pages, and `llms.txt`. |
+| `vercel-site-poc` | While building. Next.js demo: brand, languages, search, themes, preview banner, share cards, redirects, contact links, legal pages, a “Crafted by Ditectrev” footer link, and `llms.txt`. |
 
 `vercel-site-poc` lives in this repo at `.cursor/skills/vercel-site-poc/SKILL.md`. Commit that file. A Cloud Agent only sees skills inside the repo it is working on. There is no personal copy on this Mac.
 

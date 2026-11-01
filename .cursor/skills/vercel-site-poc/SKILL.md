@@ -62,6 +62,10 @@ Every page sets `robots` to `noindex, nofollow` so the demo host does not compet
 
 UI chrome (nav, skip link, search, theme, preview banner, form errors, consent, opening-hours, 404, untranslated notice) lives in one dictionary per locale, separate from page bodies.
 
+## Footer credit
+
+Every page footer, including the 404, ends with the text `Crafted by Ditectrev`. The whole phrase is one link to `https://ditectrev.com`. Keep that wording in English on every locale. Do not translate it and do not restyle it as a new brand mark.
+
 ## Search
 
 Build a search index from the content module: path, locale, title, and plain text stripped from blocks. Filter in the browser, current locale only. Open it as a dialog with an accessible name, label the field, close on Escape, and return focus to the button that opened it. Show matches as links. Empty state after two characters. No search service.
@@ -89,7 +93,7 @@ Keep a path that already exists on the live site. When the demo path differs, ad
 
 ## Not found
 
-`app/not-found.tsx` uses the site header, the preview banner, a locale-aware heading, a link home, and the search control. Locale comes from the path prefix, otherwise the primary locale. One `h1`. No default Next.js error screen.
+`app/not-found.tsx` uses the site header, the preview banner, a locale-aware heading, a link home, the search control, and the same footer credit as every other page. Locale comes from the path prefix, otherwise the primary locale. One `h1`. No default Next.js error screen.
 
 ## Legal pages
 
@@ -147,6 +151,7 @@ Add `<link rel="describedby" href="/llms.txt">` in the document head. Curate the
 - [ ] With an id, the script loads only after Accept; Reject loads nothing
 - [ ] `/sitemap.xml`, `/robots.txt`, and `/llms.txt` respond and share the page list
 - [ ] Skip link, focus, and reduced motion work
+- [ ] Every page footer, including 404, shows `Crafted by Ditectrev` linking to `https://ditectrev.com`
 - [ ] Forms without env vars explain how to reach the business
 - [ ] README covers install, build, Vercel import, env vars, and removing `noindex` at launch
 
